@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/ahmet/Tools/git/chill-dev/build'
+let g:netrw_dirhist_2='/home/ahmet/Tools/git/chill-dev-0.2.1/omega/code_gen'
+let g:netrw_dirhist_3='/home/ahmet/Projects/ConvNet/.git'
