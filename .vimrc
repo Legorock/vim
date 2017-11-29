@@ -2,6 +2,10 @@
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-sensible'
 
+Plug 'rust-lang/rust.vim'
+Plug 'racer-rust/vim-racer'
+Plug 'cespare/vim-toml'
+
 Plug 'romainl/apprentice'
 Plug 'altercation/vim-colors-solarized'
 Plug 'flazz/vim-colorschemes'
@@ -17,6 +21,9 @@ call plug#end()
 
 let g:syntastic_cpp_compiler = 'g++'
 let g:syntastic_cpp_compiler_options = ' -std=c++14'
+
+let g:racer_cmd = "~/.cargo/bin/racer"
+let g:racer_experimental_completer = 1
 
 " Theme settings "
 
@@ -37,14 +44,24 @@ set number
 set showcmd
 set encoding=utf-8
 
-" Texting settingsa "
+set hidden
+
+" Texting settings "
 set nowrap
 set tabstop=4
 set softtabstop=4
-set shiftwidth=2
+set shiftwidth=4
 set expandtab
 set smartindent
 set showmatch
 
 nnoremap j gj
 nnoremap k gk
+
+" Vim Tabs Remappings "
+nnoremap tn :tabnew<Space>
+nnoremap tk :tabnext<CR>
+nnoremap tj :tabprev<CR>
+nnoremap tf :tabfirst<CR>
+nnoremap tl :tablast<CR>
+
