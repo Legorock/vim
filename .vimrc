@@ -1,26 +1,27 @@
 
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-sensible'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 Plug 'rust-lang/rust.vim'
 Plug 'racer-rust/vim-racer'
 Plug 'cespare/vim-toml'
 
-Plug 'romainl/apprentice'
-Plug 'altercation/vim-colors-solarized'
 Plug 'flazz/vim-colorschemes'
 
 Plug 'lervag/vimtex'
 
-Plug 'scrooloose/syntastic'
-
 " On-demand loading
 Plug 'scrooloose/nerdtree', { 'on' : 'NERDTreeToggle' }
+Plug 'scrooloose/syntastic', { 'on' : 'SyntasticToggle' }
+Plug 'ctrlpvim/ctrlp.vim', { 'on' : 'CtrlpToggle' }
 call plug#end()
 
 
 let g:syntastic_cpp_compiler = 'g++'
 let g:syntastic_cpp_compiler_options = ' -std=c++14'
+let g:syntastic_cpp_remove_include_errors = 1
 
 let g:racer_cmd = "~/.cargo/bin/racer"
 let g:racer_experimental_completer = 1
@@ -28,15 +29,13 @@ let g:racer_experimental_completer = 1
 " Theme settings "
 
 syntax on 
-color dracula
 
-set t_Co=256
-"let g:solarized_termcolors=16
+
 set background=dark
-"colorscheme solarized
-" colorscheme elflord 
+colorscheme molokai
+let g:airline_theme='molokai'
 
-
+" Same Vim background as terminal background "
 highlight Normal ctermbg=None
 highlight nonText ctermbg=None
 
@@ -65,3 +64,4 @@ nnoremap tj :tabprev<CR>
 nnoremap tf :tabfirst<CR>
 nnoremap tl :tablast<CR>
 
+nnoremap tt :NERDTreeToggle<CR>
