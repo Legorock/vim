@@ -1,16 +1,22 @@
 
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-sensible'
+
+" Visual Customizations
+Plug 'flazz/vim-colorschemes'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
+" Rust related
 Plug 'rust-lang/rust.vim'
 Plug 'racer-rust/vim-racer'
 Plug 'cespare/vim-toml'
 
-Plug 'flazz/vim-colorschemes'
+" Latex related
+Plug 'vim-latex/vim-latex'
 
-Plug 'lervag/vimtex'
+" Python related
+Plug 'klen/python-mode'
 
 " On-demand loading
 Plug 'scrooloose/nerdtree', { 'on' : 'NERDTreeToggle' }
