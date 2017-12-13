@@ -18,10 +18,12 @@ Plug 'vim-latex/vim-latex'
 " Python related
 Plug 'klen/python-mode'
 
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'danro/rename.vim'
+
 " On-demand loading
 Plug 'scrooloose/nerdtree', { 'on' : 'NERDTreeToggle' }
 Plug 'scrooloose/syntastic', { 'on' : 'SyntasticToggle' }
-Plug 'ctrlpvim/ctrlp.vim', { 'on' : 'CtrlpToggle' }
 call plug#end()
 
 
