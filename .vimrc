@@ -34,6 +34,13 @@ let g:syntastic_cpp_remove_include_errors = 1
 let g:racer_cmd = "~/.cargo/bin/racer"
 let g:racer_experimental_completer = 1
 
+
+
+" disable pymode new window auto document
+set completeopt=menu
+let pymode_rope_complete_on_dot = 0 
+
+
 " Theme settings "
 
 syntax on 
