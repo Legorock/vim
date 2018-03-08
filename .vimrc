@@ -23,7 +23,6 @@ Plug 'danro/rename.vim'
 
 " On-demand loading
 Plug 'scrooloose/nerdtree', { 'on' : 'NERDTreeToggle' }
-Plug 'scrooloose/syntastic', { 'on' : 'SyntasticToggle' }
 call plug#end()
 
 
