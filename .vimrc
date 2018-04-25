@@ -16,7 +16,7 @@ Plug 'cespare/vim-toml'
 Plug 'vim-latex/vim-latex'
 
 " Python related
-Plug 'klen/python-mode'
+" Plug 'klen/python-mode'
 
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'danro/rename.vim'
@@ -56,6 +56,9 @@ highlight nonText ctermbg=None
 set number
 set showcmd
 set encoding=utf-8
+
+set incsearch
+set cursorline
 
 set hidden
 
