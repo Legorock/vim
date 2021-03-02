@@ -9,20 +9,17 @@ Plug 'vim-airline/vim-airline-themes'
 
 " Rust related
 Plug 'rust-lang/rust.vim'
-Plug 'racer-rust/vim-racer'
-Plug 'cespare/vim-toml'
+" Plug 'racer-rust/vim-racer'
+" Plug 'cespare/vim-toml'
 
 " Latex related
-Plug 'vim-latex/vim-latex'
+" Plug 'vim-latex/vim-latex'
 
-" Python related
-" Plug 'klen/python-mode'
-
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'danro/rename.vim'
+" Plug 'danro/rename.vim'
 
 " On-demand loading
-Plug 'scrooloose/nerdtree', { 'on' : 'NERDTreeToggle' }
+" Plug 'ctrlpvim/ctrlp.vim', { 'on' : 'CTRLPToggle' }
+" Plug 'scrooloose/nerdtree', { 'on' : 'NERDTreeToggle' }
 call plug#end()
 
 
@@ -30,20 +27,12 @@ let g:syntastic_cpp_compiler = 'g++'
 let g:syntastic_cpp_compiler_options = ' -std=c++14'
 let g:syntastic_cpp_remove_include_errors = 1
 
-let g:racer_cmd = "~/.cargo/bin/racer"
-let g:racer_experimental_completer = 1
-
-
-
-" disable pymode new window auto document
-set completeopt=menu
-let pymode_rope_complete_on_dot = 0 
+" let g:racer_cmd = "~/.cargo/bin/racer"
+" let g:racer_experimental_completer = 1
 
 
 " Theme settings "
-
 syntax on 
-
 
 set background=dark
 colorscheme molokai
@@ -61,6 +50,8 @@ set incsearch
 set cursorline
 
 set hidden
+
+set nocompatible
 
 " Texting settings "
 set nowrap
@@ -81,4 +72,4 @@ nnoremap tj :tabprev<CR>
 nnoremap tf :tabfirst<CR>
 nnoremap tl :tablast<CR>
 
-nnoremap tt :NERDTreeToggle<CR>
+" nnoremap tt :NERDTreeToggle<CR>
